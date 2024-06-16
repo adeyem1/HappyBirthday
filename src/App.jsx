@@ -43,7 +43,7 @@ function App() {
           }
           const average = sum / inputData.length;
           const amp = Math.round(average * 10000);
-          if (amp > 850) {
+          if (amp > 800) {
             const randomFlameIndex = Math.floor(Math.random() * flameCount);
             const flame = flameRefs[randomFlameIndex].current;
             if (flame && flame.style.display !== "none") {
@@ -54,9 +54,11 @@ function App() {
                   let nameT = decodeURI(window.location.pathname);
                   nameT = nameT.charAt(1).toUpperCase() + nameT.slice(2);
                   if (bdMsgEl.current) {
-                    bdMsgEl.current.innerHTML = `Happy Birthday <br> ${nameT}`;
+                    bdMsgEl.current.innerHTML = `Happy Birthday Yaya 🥳🎉<br> ${nameT}`;
                     bdMsgEl.current.classList.add("changeColor");
-                    bdMsgEl.current.style.fontFamily = "allura";
+                    bdMsgEl.current.style.fontFamily = "Monospace"
+                    setShowConfetti(true);
+                    
                   }
                   audioRef.current.play();
                   stopMicrophone();

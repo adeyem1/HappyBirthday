@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,11 +39,23 @@
 
 .read-the-docs {
   color: #888;
+} */
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('../src/days.png'); /* Path to your background image */
+  
+  background-size: 70rem;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-body {
-  background-color: #333;
-}
 
 .cake {
   position: absolute;
@@ -247,3 +259,32 @@ body {
           0 0 80px rgba(255, 165, 0, 0.5);
   }
 }
+
+#instruction{
+  color: #fd9800;
+  font-size: 1.5em;
+  margin-top: 1em;
+  text-align: center;
+  font-family: fantasy;
+  padding-bottom: 20em;
+}
+
+#video-container{
+  display: flex;
+  border: 50px 50px;
+  border-radius: 20px;
+  /* border-style: groove; */
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0);
+  justify-content: center;
+  margin-top: 1em;
+  box-sizing: content-box;
+  background-color: #ccc;
+  border-radius: 6%;
+  box-shadow:
+      0 2px 0 rgba(204, 204, 204, 1),
+      0 4px 0 rgba(204, 204, 204, 0.8),
+      0 5px 40px rgba(0, 0, 0, 0.5);
+}
+
